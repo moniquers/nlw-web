@@ -1,6 +1,7 @@
 import React from 'react';
-import { FiLogIn } from 'react-icons/fi'
-import "./styles.css"
+import { FiLogIn } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
+import "./styles.css";
 import logo from '../../assets/logo.svg';
 
 const Home = () => {
@@ -17,10 +18,10 @@ const Home = () => {
                     <p>
                         Ajudamos pessoas a encontrarem pontos de coleta de forma eficiente.
                     </p>
-                    <a href="/cadastro">
+                    <Link to="/create-point">
                         <span><FiLogIn></FiLogIn></span>
                         <strong>Cadastre um ponto de coleta</strong>
-                    </a>
+                    </Link>
                 </main>
             </div>
         </div>
